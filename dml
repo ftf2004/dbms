@@ -11,3 +11,22 @@ select * from wh;
 update wh set wtag='Diamond' where wtag='Gold';
 
 select * from wh;
+
+delete from wh where wid=2;
+
+select * from wh;
+
+create table wh1 (wid integer, wloc varchar(100),wtag varchar(20), wdate date);
+
+insert into wh1 select * from wh;
+
+select * from wh1;
+
+insert into wh1 (wid,wtag) select wid, wtag from wh;
+
+select * from wh1;
+
+insert into wh values (&wid, &wloc, &wtag, &wdate);
+
+select * from wh;
+
