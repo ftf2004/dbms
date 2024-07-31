@@ -1,0 +1,13 @@
+create table wh (wid integer, wloc varchar(100),wtag varchar(20), wdate date);
+
+insert into wh values (1,'Dubai','Gold','20-jul-2033');
+
+select * from wh;
+
+insert into wh (wid, wloc) values (2,'Abudabi');
+
+select * from wh;
+
+update wh set wtag='Diamond' where wtag='Gold';
+
+select * from wh;
